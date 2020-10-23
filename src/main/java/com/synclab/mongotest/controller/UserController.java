@@ -72,7 +72,7 @@ public class UserController {
 		}
 	}
 	
-	@GetMapping(value = "/get/all/{username}")
+	@GetMapping(value = "/get/all")
 	public ResponseEntity<List<User>> getAll() {
 		List<User> list = userRepository.findAll();
 		if(list.isEmpty()) 
